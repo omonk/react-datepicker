@@ -1,2 +1,2 @@
-import useDay from './useDay';
-export default useDay;
+import useDay from './useDay'
+export default useDay

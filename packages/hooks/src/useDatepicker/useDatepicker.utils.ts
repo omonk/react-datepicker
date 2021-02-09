@@ -31,21 +31,13 @@ export function isFirstOrLastSelectedDate(
   return !!((startDate && isSameDay(date, startDate)) || (endDate && isSameDay(date, endDate)))
 }
 
-export function isStartDate(
-  date: Date,
-  startDate: Date | null,
-) {
+export function isStartDate(date: Date, startDate: Date | null) {
   return !!(startDate && isSameDay(date, startDate))
 }
 
-export function isEndDate(
-  date: Date,
-  endDate: Date | null,
-) {
+export function isEndDate(date: Date, endDate: Date | null) {
   return !!(endDate && isSameDay(date, endDate))
 }
-
-
 
 interface IsDateBlockedProps {
   date: Date

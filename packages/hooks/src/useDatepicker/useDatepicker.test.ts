@@ -519,7 +519,6 @@ describe('useDatepicker', () => {
     clear()
   })
 
-
   test('should check if date is start date', () => {
     const onDatesChange = jest.fn()
     advanceTo(new Date(2019, 2, 27, 0, 0, 0))
@@ -541,7 +540,6 @@ describe('useDatepicker', () => {
     expect(result.current.isStartDate(new Date(2019, 2, 27, 0, 0, 0))).toBe(false)
     clear()
   })
-
 
   test('should check if date is end date', () => {
     const onDatesChange = jest.fn()
